@@ -109,7 +109,6 @@ header a:hover:before {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	height: 90vh;
 	width: 100vw;
 	justify-content: center;
 	-ms-align-items: center;
@@ -126,6 +125,7 @@ header a:hover:before {
 	width: 100vw;
 	padding: 10px;
 	background-color: #fdedc1;
+	height: 90vh;
 }
 
 .first {
