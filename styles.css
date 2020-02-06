@@ -114,6 +114,7 @@ header a:hover:before {
 	-ms-align-items: center;
 	align-items: center;
 	background-color: #fef3d5;
+	height: 600px;
 }
 
 .main_wrapper {
