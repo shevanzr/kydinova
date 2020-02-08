@@ -339,6 +339,27 @@ header a:hover:before, .menu a:hover:before {
 	font-size: 36px;
 }
 
+.gallery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery img {
+	width: 33.33%;
+	padding: 0;
+	margin: 0;
+}
+
 @media screen and (max-width: 928px) {
 	header a {
 		font-size: 18px;
@@ -367,6 +388,9 @@ header a:hover:before, .menu a:hover:before {
 	}
 	.poem {
 		margin-top: 50px;
+	}
+	.gallery img {
+		width: 50%;
 	}
 }
 
