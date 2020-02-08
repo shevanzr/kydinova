@@ -7,42 +7,43 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<header>
-		<a href="index.html" class="link-active">Головна</a>
-		<a href="bio.html">Біографія</a>
-		<a href="poetry.html">Поезія</a>
-		<a href="prose.html">Проза</a>
-		<a href="reviews.html">Відгуки критиків</a>
-		<a href="photos.html">Фотогалерея</a>
+		<a onclick="change_index()" class="link-active">Головна</a>
+		<a onclick="change_bio()">Біографія</a>
+		<a onclick="change_poetry()">Поезія</a>
+		<a onclick="change_prose()">Проза</a>
+		<a onclick="change_reviews()">Відгуки критиків</a>
+		<a onclick="change_photos()">Фотогалерея</a>
 	</header>
 
 	<div class="menu">
-		<a href="index.html" class="link-active">Головна</a>
-		<a href="bio.html">Біографія</a>
-		<a href="poetry.html">Поезія</a>
-		<a href="prose.html">Проза</a>
-		<a href="reviews.html">Відгуки критиків</a>
-		<a href="photos.html">Фотогалерея</a>
+		<a onclick="change_index()" class="link-active">Головна</a>
+		<a onclick="change_bio()">Біографія</a>
+		<a onclick="change_poetry()">Поезія</a>
+		<a onclick="change_prose()">Проза</a>
+		<a onclick="change_reviews()">Відгуки критиків</a>
+		<a onclick="change_photos()">Фотогалерея</a>
 		<div class="menu_button wow fadeInUp" onclick="open_menu()"><span></span></div>
 	</div>
 
 	<div class="main_wrapper">
-		<h1 class="tc">Літературна візитка краю</h1>
-		<h1 class="tc">Луганщина</h1>
+		<h1 class="tc wow fadeInUp">Літературна візитка краю</h1>
+		<h1 class="tc wow fadeInUp">Луганщина</h1>
 		<div class="video_wrapper">
-			<iframe class="video wow fadeInLeft" src="https://www.youtube.com/embed/R-EQKsFa6q8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="video" src="https://www.youtube.com/embed/R-EQKsFa6q8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		<div class="desc">
+		<div class="desc wow fadeInRight">
 			Ольга&nbsp;Стрижаченко (літературний псевдонім – Ольга&nbsp;Кудінова). <br>
 			Письменниця, член Національної спілки письменників України, з 2018 року входить до складу правління Луганської обласної організації НСПУ. <br>
 			З-під пера молодої літераторки вийшли у світ дві збірки «А в мого солов’я незрадлива душа» (Луганськ, 2005), «Останній дар» (Луганськ, 2008). <br>
 			Лауреат Міжнародної україно-німецької літературної премії ім. Олеся&nbsp;Гончара (Київ, 2006) та багатьох літературних конкурсів регіонального, державного і навіть міжнародного рівнів.
 		</div>
-		<img src="photo.png" alt="Фото" class="main_photo">
-		<audio controls>
+		<img src="photo.png" alt="Фото" class="main_photo wow fadeInRight">
+		<audio controls class="wow fadeInDown">
 			<source src="necroTown.mp3">
 			У вас не підтримується програвання MP-3 файлів.
 		</audio>
