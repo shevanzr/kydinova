@@ -48,6 +48,10 @@ body {
 	overflow-x: hidden;
 }
 
+.tc {
+	text-align: center;
+}
+
 header {
 	width: 100vw;
 	height: 10vh;
@@ -113,7 +117,6 @@ header a:hover:before, .menu a:hover:before {
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
-	background-color: #fef3d5;
 	height: 600px;
 }
 
@@ -128,6 +131,13 @@ header a:hover:before, .menu a:hover:before {
 	background-color: #fdedc1;
 	min-height: 90vh;
 	padding-top: 20px;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 }
 
 .first {
@@ -146,7 +156,7 @@ header a:hover:before, .menu a:hover:before {
 	flex-direction: column;
 }
 
-.first img {
+.main_photo {
 	max-width: 40vw;
 	margin: 10px;
 	margin-bottom: 25px;
@@ -173,7 +183,7 @@ header a:hover:before, .menu a:hover:before {
 }
 
 .desc {
-	margin: 10px 17.5%;
+	margin: 10px 10%;
 	line-height: 23px;
 }
 
@@ -292,24 +302,7 @@ header a:hover:before, .menu a:hover:before {
 	display: -o-flex;
 	display: flex;
 	margin-top: 25px;
-	font-family: 'Marck Script', cursive;
-	font-size: 32px;
-}
-
-.poetry-first, .poetry-second, .poetry-third {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;
-	width: 33.3vw;
+	font-size: 24px;
 }
 
 .title-poem {
@@ -317,16 +310,38 @@ header a:hover:before, .menu a:hover:before {
 	font-size: 42px;
 }
 
+.poems_list, .poem {
+	width: 50vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.poems_list span {
+	cursor: pointer;
+}
+
+.poems_list span:hover {
+	text-decoration: underline;
+}
+
+.poem {
+	font-family: 'Marck Script', cursive;
+	font-size: 36px;
+}
+
 @media screen and (max-width: 928px) {
 	header a {
 		font-size: 18px;
-	}
-	.main_wrapper {
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
 	}
 	.first, .second {
 		width: 100vw;
@@ -336,7 +351,7 @@ header a:hover:before, .menu a:hover:before {
 		-ms-align-items: center;
 		align-items: center;
 	}
-	.first img {
+	.main_photo {
 		max-width: 90vw;
 	}
 
@@ -347,13 +362,12 @@ header a:hover:before, .menu a:hover:before {
 		-o-flex-direction: column;
 		flex-direction: column;
 	}
-	.poetry-first, .poetry-second, .poetry-third {
+	.poems_list, .poem {
 		width: 100vw;
 	}
-	.poetry-third {
-		margin-bottom: 65px;
+	.poem {
+		margin-top: 50px;
 	}
-	
 }
 
 @media screen and (max-width: 758px) {
