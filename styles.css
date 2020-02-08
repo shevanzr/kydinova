@@ -216,6 +216,7 @@ header a:hover:before, .menu a:hover:before {
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .menu_button span {
@@ -223,7 +224,6 @@ header a:hover:before, .menu a:hover:before {
 	background-color: #222;
 	height: 3px;
 	width: 33%;
-	cursor: pointer;
 }
 
 .menu_button span:before,
@@ -263,6 +263,60 @@ header a:hover:before, .menu a:hover:before {
 	left: 0;
 }
 
+.link-active {
+	color: #666 !important;
+}
+
+.poetry_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100vw;
+	padding: 10px;
+	background-color: #fdedc1;
+	min-height: 90vh;
+	padding-top: 20px;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.poetry-part {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 25px;
+	font-family: 'Marck Script', cursive;
+	font-size: 32px;
+}
+
+.poetry-first, .poetry-second, .poetry-third {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 33.3vw;
+}
+
+.title-poem {
+	font-weight: 700;
+	font-size: 42px;
+}
+
 @media screen and (max-width: 928px) {
 	header a {
 		font-size: 18px;
@@ -285,6 +339,21 @@ header a:hover:before, .menu a:hover:before {
 	.first img {
 		max-width: 90vw;
 	}
+
+	.poetry-part {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.poetry-first, .poetry-second, .poetry-third {
+		width: 100vw;
+	}
+	.poetry-third {
+		margin-bottom: 65px;
+	}
+	
 }
 
 @media screen and (max-width: 758px) {
@@ -297,6 +366,9 @@ header a:hover:before, .menu a:hover:before {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+	}
+	.main_wrapper, .poetry_wrapper {
+		min-height: 100vh;
 	}
 }
 
