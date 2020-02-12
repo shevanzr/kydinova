@@ -1,5 +1,4 @@
 *::selection {
-	text-shadow: 1px 1px 4px #ccc;
 	background-color: #b9abff;
 	color: #222;
 }
@@ -229,6 +228,10 @@ header a:hover:before, .menu a:hover:before {
 	cursor: pointer;
 }
 
+.menu a {
+	text-align: center;
+}
+
 .menu_button span {
 	position: absolute;
 	background-color: #222;
@@ -308,6 +311,7 @@ header a:hover:before, .menu a:hover:before {
 .title-poem {
 	font-weight: 700;
 	font-size: 42px;
+	text-align: center;
 }
 
 .poems_list, .poem {
@@ -328,6 +332,7 @@ header a:hover:before, .menu a:hover:before {
 
 .poems_list span {
 	cursor: pointer;
+	text-align: center;
 }
 
 .poems_list span:hover {
@@ -337,6 +342,12 @@ header a:hover:before, .menu a:hover:before {
 .poem {
 	font-family: 'Marck Script', cursive;
 	font-size: 36px;
+	text-align: center;
+}
+
+.poem-font {
+	font-family: 'Marck Script', cursive;
+	font-size: 32px;
 }
 
 .gallery {
@@ -358,6 +369,38 @@ header a:hover:before, .menu a:hover:before {
 	width: 33.33%;
 	padding: 0;
 	margin: 0;
+}
+
+.reviews {
+	width: 90%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.review-text {
+	font-size: 22px;
+	text-align: center;
+}
+
+.review-author {
+	text-align: right;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.splitter {
+	background-color: #000;
+	height: 3px;
+	width: 100%;
+	margin: 10px 0;
 }
 
 @media screen and (max-width: 928px) {
