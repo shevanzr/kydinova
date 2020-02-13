@@ -451,6 +451,9 @@ header a:hover:before, .menu a:hover:before {
 	.main_wrapper, .poetry_wrapper {
 		min-height: 100vh;
 	}
+	.gallery img {
+		width: 100%;
+	}
 }
 
 /* font-family: 'Marck Script', cursive; */
