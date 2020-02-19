@@ -403,6 +403,11 @@ header a:hover:before, .menu a:hover:before {
 	margin: 10px 0;
 }
 
+.bio_text {
+	font-size: 20px;
+	width: 98%;
+}
+
 @media screen and (max-width: 928px) {
 	header a {
 		font-size: 18px;
