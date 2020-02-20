@@ -1,227 +1,507 @@
-<!DOCTYPE html>
-<html lang="ua">
-<head>
-	<meta charset="UTF-8">
-	<title>Сайт про Ольгу Кудінову</title>
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="animate.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-<body>
+*::selection {
+	background-color: #b9abff;
+	color: #222;
+}
 
-	<header>
-		<a href="index.html">Головна</a>
-		<a href="bio.html">Біографія</a>
-		<a href="poetry.html">Поезія</a>
-		<a href="prose.html" class="link-active">Проза</a>
-		<a href="reviews.html">Відгуки критиків</a>
-		<a href="photos.html">Фотогалерея</a>
-	</header>
+*, *:after, *:before {
+	box-sizing: border-box;
+}
 
-	<div class="menu">
-		<a href="index.html">Головна</a>
-		<a href="bio.html">Біографія</a>
-		<a href="poetry.html">Поезія</a>
-		<a href="prose.html" class="link-active">Проза</a>
-		<a href="reviews.html">Відгуки критиків</a>
-		<a href="photos.html">Фотогалерея</a>
-		<div class="menu_button wow fadeInUp" onclick="open_menu()"><span></span></div>
-	</div>
+::-webkit-scrollbar-button {
+	background-image:url('');
+	background-repeat:no-repeat;
+	width:5px;
+	height:0px;
+}
 
-	<div class="main_wrapper">
-		<div class="splitter"></div>
-		<span class="prose">
-			<p class="tc title-prose fw700">Сусідська баба</p><br>
-			<p class="tc title-prose">І</p><br>
+::-webkit-scrollbar-track {
+	background-color: #5c6069;
+}
 
-			<span class="tab"></span>
-			– …Під три чорти твою, Семене, владу. Ні Бога в них нема, ні людей.
-			Дарма, що ти офіцер… Хай сказяться всі твої Сталіни. Хай знидіють живцем.
-			Скоро… Скоро захлинеться у прокльонах цей світ. Ні. Не так. Мовчки
-			захлинеться тими прокльонами, бо хіба можна хоч пів слова, хоч пів звука…
-			Ні. Поки ти, Семене, топчеш солдатськими чобітьми землю, я ховаю в ній
-			наших дітей. Своїх дітей ховаю, чуєш?! Сама народжую, сама ховаю…
-			Дітей… Діточок… Чуєш, Семене?! Не чуєш… <br><span class="tab"></span>
-			Марія важко дихала, через силу ворушила сухими запеченими губами.
-			Іноді, коли чула плач немовляти, схоплювалась і поривалась бігти, але,
-			отямившись за мить, знову опускала зболіле й попухле від голоду тіло на
-			стару лаву. <br><span class="tab"></span>
-			Стогнав за вікном вітер. Хлипали ставнями вікна. Аж на самісінькому
-			краю зубожілого повоєнного села стояла й дивилася в далечінь, наче
-			виглядала кращого життя, згорблена Маріїна хата. Далеко не нова, вона
-			зігнулась до землі, прибита ще одним, уже сьомим, і, певно, ще не останнім
-			горем. <br><span class="tab"></span>
-			На дворі досі повністю не смеркло, а в хаті вже було майже поночі.
-			Каганця ніхто не світив. На холодній печі зморені напівсном і, здавалось, вже
-			безкінечним голодом, тихо лежали двоє діток. Як безпритульні цуценята в
-			негоду, тулились дев’ятирічний Грицько та семирічна Меланка один до
-			одного. Їх кістляві тільця у старому лахмітті, прикриті драною рядниною,
-			ніяк не могли нагрітись. <br><span class="tab"></span>
-			Мати не топили сьогодні печі, а з їжі діти тільки й мали в роті, що
-			шмат чорного глизявого хліба на двох. Втім, мати і того не їли… Он лежать
-			на лаві, марять, б’ються в гарячці, стогнуть. Три дні як застуджені, а сьогодні
-			ще й Іванку поховали. Вона була мала, дуже криклива, весь час хворіла і
-			плакала. Сусідська баба Дуська казала: «Хто від народження слабує, той
-			довго не протягне». <br><span class="tab"></span>
-			Як тільки мати не ходили біля Іванки! Було, ні вдень не сплять, ні
-			вночі. Лікаря гукали. Відриваючи які були крихти від нас, своїх дітей,
-			нишком пхали та все заглядали йому у вічі: «Як?». Але. Правда чомусь
-			вперто, не вперше, між іншим, і не востаннє, переходила на бік усюдисущої
-			баби Дуськи. <br><span class="tab"></span>
-			Чорною тінню снувала вона там, де з’являвся покійник. Маючи
-			відлюдькувату вдачу, у своєму траурному ганчір’ї схожа була баба на
-			великого крука. По тому, до чиєї хати завернула вона в такому вбранні,
-			можна було дізнатись, у кого саме на хуторі причащається біда сьогодні.
-			<br><br><span class="tab"></span>
-			Може, тому й сахалися її діти, бо бачили частіше всього бабу в час, як
-			мати несамовито голосила над їх померлими уночі братиком чи сестричкою.
-			Меланка теж її боялася. І не тільки тоді, коли та приходила до них
-			додому у своєму лиховісному лататті. Як от сьогодні.<br><span class="tab"></span>
-			…Марія до ранку так і не піднялася. Лице її пашіло, глибоко із грудей
-			замість дихання проривався глухий клекіт. Кашель, стогін, плач час від часу
-			витісняли липку тишу темної кімнати. Але як тільки вони вщухали, остання
-			наростала з ще більшою силою, давила, гнітила.<br><span class="tab"></span>
-			Вдосвіта дзенькнула лямка сінешніх дверей, тихо скрипнули непідперті
-			хатні. Сполохані діти причаїлися, міцніше притислись одне до одного. Вони
-			знали: незвані гості можуть бути лихими. Малі втямили це тоді, як одного
-			разу такі гості переступили їхній поріг із незрозумілими словами «в ім’я
-			влади». Перевернувши хату догори дном, вони винесли з неї все їстивне:
-			зерно з коморі, картоплю й пшоно, навіть кислиці, що висіли у мішечках під
-			стелею на отих он гвіздках. В ім’я тієї ж влади повели з хліва єдину
-			годувальницю Лиску – руду молоденьку корівку з білою плямою на лобі
-			поміж ріг. А в неї було найсолодше на весь хутір молоко…<br><span class="tab"></span>
-			Діти тоді дивувались: чому мати, їх завжди така сувора й справедлива
-			мати, не сказала тим людям ні слова. Тільки плакала дуже довго. А потім, як,
-			вочевидь, вже не стало сліз, закам’яніла і зовні, й у серці. Не стало в неї тої
-			ласки, ніжности. У раніше зелених та враз вицвілих очах оселились пустка й
-			глибокий біль.<br><span class="tab"></span>
-			Зараз Марія мов не чула, що в хаті хтось сторонній. Сусідська баба
-			прийшла мовчки. Навіть не привітавшись, запалила свічку. При тьмяному
-			полум’ї почала лагодити піч. Хмиз сухо затріщав, грубка разом з теплим
-			духом розносила по кімнаті дух старечий, та зрідка – дим крізь незамазані
-			глиною шпарини.<br><span class="tab"></span>
-			Марія була доброю господинею, бідність для неї не вважалася
-			приводом неохайності. Піч і діл завжди підмазувала, стіни вибілювала.
-			Дрібненькі діти бачили довкола себе лад. Лад та злидні. Доки батько в
-			колгоспі «пердседательствували», як казали мати, сім’я хоч і жила в скруті,
-			але харч мала, не голодувала зовсім. Однак як тільки батька відправили
-			служити, прийшли геть страшні часи. Він розумів те, як зрідка приходив у
-			відпустку. Проте чим мав зарадити? Єдине, що міг – приносив торбу сухарів,
-			ще чого там. От хоча б пів року тому навідувався, за Петром та Василем дуже
-			побивався, то вже п’ятий та шостий син, яких не стало в родині. Іванкою,
-			донечкою дуже тішився: колихав, з рук не спускав. Вперше бачив її. Як
-			виявилось, і востаннє…<br>
-			<br><span class="tab"></span>
-			…Марія зайшлася кашлем, схопилась, сіла на лаві, тримаючи голову
-			обома руками.<br><span class="tab"></span>
-			– Я зараз, зараз, Іванко. Іванко, донечко, потерпи… Не кричи! Не
-			кричи…<br><span class="tab"></span>
-			Здригнулася. Розплющила пусті очі й знову важко лягла.<br><span class="tab"></span>
-			– …Під три чорти, Семене, чуєш ти мене?... Чуєш?...<br><span class="tab"></span>
-			Розридалася.
-			Баба Дуська набрала води, піднесла хворій:<br><span class="tab"></span>
-			– Пий, Маріє. Зараз трави тобі наварю, он принесла в подолі.
-			Підніматись
-			уже треба. А балакати зайве зась. Не буди лихо… Не всих же дітей земля
-			забрала. Ті, що по ній бігають, їсти хочуть, матері їм треба. Збирай усю силу
-			свою, спирайся на ноги. Весна йде, роботи – гай-гай… Буде легше, Маню,
-			побачиш, буде легше.<br><span class="tab"></span>
-			Маріїні ридання потроху вщухають.<br><span class="tab"></span>
-			Баба-сусідка спішить ставити на піч два чавунці з водою. Тонкі гілки
-			горять швидко, а їх онде всього жменя лежить. У один ламає якогось зілля,
-			воно закипа, розходиться по хаті приємним трав’яним запахом. У другий
-			чавунець перетирає й засипа до окропу дрібку пшеничних висівок та чотири
-			картоплини з голуб’яче яйце. Картоплю баба миє, бо чистити не можна: мала.
-			Нехитре вариво булькає, іноді вистрибує на піч, сичить. За вікном сіріє,
-			розвидняється на день.<br><span class="tab"></span>
-			– Вставайте, діти, поїсте, – баба наливає в миску і ставить на стіл
-			зварене.<br><span class="tab"></span>
-			Рідкий куліш, не заправлений нічим, обпікає язик. Грицько й Меланка, або
-			просто Миля, як звуть її всі, сьорбають і все поглядають з-під лоба: із жалем
-			на слабу матір, усе ще з недовірою – на бабу Дуську, котра поїть хвору чимсь
-			гарячим.<br><span class="tab"></span>
-			– Пий, Маню, пий. Полегшає. Прийде твій Семен. Піднімете діток. Десь
-			там… отямляться. Матимем що їсти. Не голодуватимем. Весна, Маню, йде, а
-			весна – то, Маню, життя, то надії…<br><span class="tab"></span>
-			Діти ще не бачили сусідську бабу такою. З-під такої ж давньої, як вона
-			сама, хустки, укритої дрібними коричневими цятками, вибились сиві пасма.
-			По глибоких зморшках, що борознами лягли на лиці, позалягав смуток.<br><span class="tab"></span>
-			Старечі очі світилися тугою і теплом. Вона вже не здавалася ні страшною, ні
-			тим паче лихою.<br><span class="tab"></span>
-			…На дворі зовсім розсвіло…<br>
-			<p class="tc title-prose">II</p><br><span class="tab"></span>
-			Шлях Семена видався нелегким. Фронтові рани і спрага мучили
-			нестерпно. Але вже близько. Он за тим лісом в невеликому яру лежить
-			колишній хутір пана Меженського. Він і тепер так зветься: Меженський, хоч
-			із тридцятих років то вже колгосп, а не приватна власність.<br><span class="tab"></span>
-			Дерев’яна Семенова хата вмостилася скраю, може навіть трохи окремо
-			від інших. Найближчим сусідським обійстям було подвір’я старої баби
-			Дуськи.<br><span class="tab"></span>
-			Семен поважав і в душі жалів цю літню жінку з важкою долею. Хоча
-			легкої долі за теперішніх часів не було, певно, ні в кого. Але баба пережила
-			родину; за війни поховала чоловіка й десятьох вже дорослих дітей. Дехто її
-			недолюблював, уникав. Та не Семен. На тлі відсутності власної рідні
-			поважного віку, він сприймав тітку як споріднену душу.<br><span class="tab"></span>
-			…Дома Семена чекала Марія й трійко діток. А може вже й четверо. В
-			одному з листів дружина сповістила, що на спомин про їхню минулу зустріч
-			носить під серцем ще одне дитя. Іванка вже, мабуть, бігає так, що Гриць із
-			Милею й не наздоженуть…<br><span class="tab"></span>
-			Із таким роєм думок офіцер радянської армії спускався стежкою з
-			високого пагорба. Весняні роботи в колгоспі через негоду йшли дуже мляво,
-			тому село мало неживий вигляд.<br><span class="tab"></span>
-			Ось і хата. Не по-весняному сірий день заглядав у товсті шибки, наче
-			всередині від нього ховали щось дуже важливе. Сніг зійшов, проте тепла все
-			не було. Яблуня гріла подекуди оголене коріння у торішньому листі.
-			Раптом… Що це? Від прочинених навстіж дверей закалатало серце.<br><span class="tab"></span>
-			Переступив поріг. Очі наткнулися на безлад, розруху: витріщилась чорними
-			дірками розвалена піч, винувато перекосився стіл, посунувся одвірок. Семен
-			тільки й зміг опуститися на лаву, що стояла понад тріснутою стіною. На ту
-			саму лаву…<br><span class="tab"></span>
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 0px;
+	border-radius: 10px;
+	background-color: #9c88ff;
+}
 
-			<p class="tc title-prose">III</p><br><span class="tab"></span>
 
-			…Вісім з половиною могил. Не страшне безглуздя, а сумний рахунок
-			Семенової родини. Сім насипів із дитячими хрестами: Микола, Іван, Павло,
-			Степан, Петро, Василь і донечка Іваночка… Поруч – великий з важким сірим
-			хрестом останній прихисток Марії та їх ненародженої дитини. Один на
-			двох…<br><span class="tab"></span>
-			– …Батьку!<br><span class="tab"></span>
-			До чорного, як сама смерть, Семена притулилися Грицько та Меланка.<br><span class="tab"></span>
-			– Грицю, Милю! Діти мої! Де ви були?<br><span class="tab"></span>
-			– Ходімо, батьку, дощ. Ходімо до хати. Ми отам живемо, у баби, –
-			Меланка показувала на хату старої сусідки.<br><span class="tab"></span>
-			– Вона забрала нас, як мати померли. Сказала, що тепер ми її онуки і
-			вона<br><span class="tab"></span>
-			нас не залишить, – пояснив, похнюпившись, Грицько, – Вона хороша, батьку.
-			Сама не їсть, а нас годує. Гладить по голові й казки розказує. А вночі, коли
-			думає, що ми спимо, плаче й когось проклина.<br><span class="tab"></span>
-			– Ходімо, батьку, – Меланка схлипнула, – там сухо й тепло.<br><span class="tab"></span>
-			Діти тулили обвітрені лиця до мокрого батькового рукава. Краплі дощу
-			стікали по Семенових щоках.<br><span class="tab"></span>
-			Приземкувата хата баби Дуськи заховалась у саду й боязко виглядала з-
-			за товстих стовбурів півстолітніх вишнин. Двері тоскно заскрипіли. З
-			середини війнуло сяким-таким теплом протопленої зранку печі.<br><span class="tab"></span>
-			– Бабо, батько прийшли!<br><span class="tab"></span>
-			– Прости, Семене. Не вберегла…<br>
+::-webkit-scrollbar-thumb:hover{
+	background-color: #6d5fb2;
+}
 
-			__________<br><br><span class="tab"></span>
+::-webkit-resizer{
+	background-image:url('');
+	background-repeat:no-repeat;
+	width:4px;
+	height:0px;
+}
 
-			Історії переписували й переписуватимуть, міняючи ідоли та ідеали.
-			Тільки одного не порушать. Єдине залишиться святим, незмінним,
-			незаплямованим: велике терпіння, безмежне серце й безмірна жертовність
-			простої української людини. Такої, як стара баба Дуська з невеликого хутора,
-			що вже давно щез із лиця землі…<br><span class="tab"></span>
-			Світла пам’ять.
-		</span>
-	</div>
+::-webkit-scrollbar{
+	width: 12px;
+}
 
-	<script src="animate.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-	<script src="jquery.min.js"></script>
-	<script src="scipts.js"></script>
+body {
+	font-family: 'Comfortaa', sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
 
-</body>
-</html>
+.tc {
+	text-align: center;
+}
+
+header {
+	width: 100vw;
+	height: 10vh;
+	background-color: #fbc531;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-evenly;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+header a, .menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	font-size: 24px;
+	-webkit-transition: .35s;
+	-o-transition: .35s;
+	transition: .35s;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+header a:hover, .menu a:hover {
+	color: #666;
+}
+
+header a:before, .menu a:before {
+	content: '';
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	width: 0%;
+	background-color: #555;
+	height: 3px;
+	transition: .35s;
+	border-radius: 15px;
+}
+
+header a:hover:before, .menu a:hover:before {
+	width: 100%;
+	left: 0;
+}
+
+.video {
+	height: 100%;
+	width: 100%;
+	max-width: 1019px;
+	max-height: 573px;
+}
+
+.video_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	height: 600px;
+}
+
+.main_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100vw;
+	padding: 10px;
+	background-color: #fdedc1;
+	min-height: 90vh;
+	padding-top: 20px;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.first {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 65vw;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.main_photo {
+	max-width: 40vw;
+	margin: 10px;
+	margin-bottom: 25px;
+}
+
+.second {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 35vw;
+	line-height: 32px;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.desc {
+	margin: 10px 10%;
+	line-height: 23px;
+}
+
+.menu {
+	width: 70vw;
+	height: 100vh;
+	background-color: #fbd05a;
+	position: fixed;
+	left: -70vw;
+	bottom: 0;
+	display: none;
+	z-index: 1;
+	-webkit-transition: .35s;
+	-o-transition: .35s;
+	transition: .35s;
+	border-right: 2px solid #96761d;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.menu_button {
+	color: black;
+	position: absolute;
+	bottom: 10px;
+	left: calc(70vw + 20px);
+	background-color: #fbc531;
+	padding: 35px;
+	border-radius: 35px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu a {
+	text-align: center;
+}
+
+.menu_button span {
+	position: absolute;
+	background-color: #222;
+	height: 3px;
+	width: 33%;
+}
+
+.menu_button span:before,
+.menu_button span:after {
+	content: '';
+	position: absolute;
+	background-color: #222;
+	height: 3px;
+	width: 100%;
+	display: block;
+	-webkit-transition: .35s;
+	-o-transition: .35s;
+	transition: .35s;
+}
+
+.menu_button span:before {
+	transform: translateY(-6px);
+}
+
+.menu_button span:after {
+	transform: translateY(6px);
+}
+
+.mbutton_active span:before {
+	transform: rotate(45deg);
+}
+
+.mbutton_active span:after {
+	transform: rotate(-45deg);
+}
+
+.mbutton_active span {
+	height: 0;
+}
+
+.menu_active {
+	left: 0;
+}
+
+.link-active {
+	color: #666 !important;
+}
+
+.poetry_wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100vw;
+	padding: 10px;
+	background-color: #fdedc1;
+	min-height: 90vh;
+	padding-top: 20px;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.poetry-part {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 25px;
+	font-size: 24px;
+}
+
+.title-poem {
+	font-weight: 700;
+	font-size: 42px;
+	text-align: center;
+}
+
+.poems_list, .poem {
+	width: 50vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.poems_list span {
+	cursor: pointer;
+	text-align: center;
+}
+
+.poems_list span:hover {
+	text-decoration: underline;
+}
+
+.poem {
+	font-family: 'Marck Script', cursive;
+	font-size: 36px;
+	text-align: center;
+}
+
+.poem-font {
+	font-family: 'Marck Script', cursive;
+	font-size: 32px;
+}
+
+.gallery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery img {
+	width: 16.66%;
+	padding: 0;
+	margin: 0;
+}
+
+.reviews {
+	width: 90%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.review-text {
+	font-size: 22px;
+	text-align: center;
+}
+
+.review-author {
+	text-align: right;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.splitter {
+	background-color: #000;
+	height: 3px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.bio_text {
+	font-size: 20px;
+	width: 98%;
+}
+
+p.tc {
+	margin: 0;
+	padding: 0;
+}
+
+p.tc.fw700 {
+	font-weight: 700;
+}
+
+span.prose {
+	font-size: 20px;
+	width: 99%;
+}
+
+.title-prose {
+	font-size: 24px;
+}
+
+.tab {
+	height: 1px;
+	width: 30px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 1661px) {
+
+	.gallery img {
+		width: 33.33%;
+	}
+
+}
+
+@media screen and (max-width: 928px) {
+	header a {
+		font-size: 18px;
+	}
+	.first, .second {
+		width: 100vw;
+	}
+	.second {
+		margin-top: 25px;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.main_photo {
+		max-width: 90vw;
+	}
+
+	.poetry-part {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.poems_list, .poem {
+		width: 100vw;
+	}
+	.poem {
+		margin-top: 50px;
+	}
+	.gallery img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 758px) {
+	header {
+		display: none;
+	}
+	.menu {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.main_wrapper, .poetry_wrapper {
+		min-height: 100vh;
+	}
+	.gallery img {
+		width: 100%;
+	}
+	span.prose {
+		margin-bottom: 70px;
+	}
+}
+
+@media screen and (max-width: 473px) {
+
+	audio {
+		margin-bottom: 70px;
+	}
+
+}
+
+/* font-family: 'Marck Script', cursive; */
