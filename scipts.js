@@ -13,7 +13,7 @@ function sel_sect_1() {
 
 function sel_sect_2() {
 
-	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat2num1()">Ранкова молитва</span><br><span onclick="show_cat2num2()">Сад</span><br><span onclick="show_cat2num4()">Зазирало небо у калюжі</span><br><span onclick="show_cat2num5()">Крізь сльози дощу посміхається заспане небо</span><br><span onclick="show_cat2num6()">Шумлять ліси</span><span onclick="show_cat2num7()">Зів’яли зламані айстри</span><span onclick="show_cat2num8()">Ромашкове</span><br><span onclick="show_caat2num9()">Пісня «Осіння»</span><br><span onclick="show_cat2num10()">Простір піснею жайвора зшитий</span>');
+	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat2num1()">Ранкова молитва</span><br><span onclick="show_cat2num2()">Сад</span><br><span onclick="show_cat2num4()">Зазирало небо у калюжі</span><br><span onclick="show_cat2num5()">Крізь сльози дощу посміхається заспане небо</span><br><span onclick="show_cat2num6()">Шумлять ліси</span><br><span onclick="show_cat2num7()">Зів’яли зламані айстри</span><br><span onclick="show_cat2num8()">Ромашкове</span><br><span onclick="show_caat2num9()">Пісня «Осіння»</span><br><span onclick="show_cat2num10()">Простір піснею жайвора зшитий</span>');
 
 }
 
@@ -148,7 +148,7 @@ function show_cat2num7() {
 
 function show_cat2num8() {
 
-	$('.poem').html('<span class="title-poem">Ромашкове</span><br>Серпневий степ нам простягав долоні<br>І дивувався ранок: як так вийшло,<br>Що з пелюсток ромашкових принишклих<br>Роса стікає краплями солоними<br>А квіти ще не вірили. Зіщулились.<br>Їх вперше дарували, не зірвавши.<br>…Взяла. Усі. Тепер вагаюсь: нащо.<br>Лиш оберемком – може вже й забулося б…<br><br>Бо так – не всохнуть і не одцвітуть.<br>Нехай тепер, узимку, дуже важко, -<br>Вже скоро… Скоро знову ці ромашки<br>В степу красивим смутком проростуть,<br><br>Й серпневі зливи знову, як колись,<br>Ділитимуть із нами літню тишу,<br>І з пелюсток ромашкових принишклих<br>Змиватимуть солоні краплі сліз.');
+	$('.poem').html('<span class="title-poem">Ромашкове</span><br>Серпневий степ нам простягав долоні<br>І дивувався ранок: як так вийшло,<br>Що з пелюсток ромашкових принишклих<br>Роса стікає краплями солоними...<br>А квіти ще не вірили. Зіщулились.<br>Їх вперше дарували, не зірвавши.<br>…Взяла. Усі. Тепер вагаюсь: нащо.<br>Лиш оберемком – може вже й забулося б…<br><br>Бо так – не всохнуть і не одцвітуть.<br>Нехай тепер, узимку, дуже важко, -<br>Вже скоро… Скоро знову ці ромашки<br>В степу красивим смутком проростуть,<br><br>Й серпневі зливи знову, як колись,<br>Ділитимуть із нами літню тишу,<br>І з пелюсток ромашкових принишклих<br>Змиватимуть солоні краплі сліз.');
 	if( $('.poem').css('margin-top') == '50px' ) {
 		$('body').scrollTo('.poem', 500);
 	}
