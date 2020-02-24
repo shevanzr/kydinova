@@ -31,7 +31,7 @@ function sel_sect_4() {
 
 function to_start() {
 
-	$('.poems_list').html('<span onclick="sel_sect_1()"><span class="poem-font">"Мій милий край з безмежністю степів"</span><br>(поезія про Україну та малу батьківщину)</span> <br><span onclick="sel_sect_2()"><span class="poem-font">"Вишнева гілка стука у вікно"</span><br>(пейзажна лірика)</span> <br><span onclick="sel_sect_3()"><span class="poem-font">"Їх серця скалічені війною"</span><br>()</span> <br><span onclick="sel_sect_4()"><span class="poem-font">"У малих долоньках помістилося літо"</span><br>(твори для дітей)</span>');
+	$('.poems_list').html('<span onclick="sel_sect_1()"><span class="poem-font">"Мій милий край з безмежністю степів"</span><br>(поезія про Україну та малу батьківщину)</span> <br><span onclick="sel_sect_2()"><span class="poem-font">"Вишнева гілка стука у вікно"</span><br>(пейзажна лірика)</span> <br><span onclick="sel_sect_3()"><span class="poem-font">"Їх серця скалічені війною"</span><br>(Захисникам присвячується)</span> <br><span onclick="sel_sect_4()"><span class="poem-font">"У малих долоньках помістилося літо"</span><br>(твори для дітей)</span>');
 	$('.poem').html('Оберіть вірш!');
 
 }
