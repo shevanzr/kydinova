@@ -7,7 +7,7 @@ function open_menu() {
 
 function sel_sect_1() {
 
-	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat1num1()">На Марківській землі (пісня)</span><br><span onclick="show_cat1num2()">В своє село вростаю серцем</span><br><span onclick="show_cat1num3()">А в мого солов’я – незрадлива душа</span><span onclick="show_cat1num4()">Зазирало небо у калюжі</span><br><span onclick="show_cat1num5()">Крізь сльози дощу посміхається заспане небо</span><br><span onclick="show_cat1num6()">Шумлять ліси</span><span onclick="show_cat1num7()">Зів’яли зламані айстри</span><span onclick="show_cat1num8()">Ромашкове</span><br><span onclick="show_caat1num9()">Пісня «Осіння»</span><br><span onclick="show_cat1num10()">Простір піснею жайвора зшитий</span>');
+	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat1num1()">На Марківській землі (пісня)</span><br><span onclick="show_cat1num2()">В своє село вростаю серцем</span><br><span onclick="show_cat1num3()">А в мого солов’я – незрадлива душа</span>');
 
 }
 
