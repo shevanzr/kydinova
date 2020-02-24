@@ -385,6 +385,11 @@ header a:hover:before, .menu a:hover:before {
 	flex-direction: column;
 }
 
+.poem-review {
+	width: 100%;
+	text-align: center;
+}
+
 .review-text {
 	font-size: 22px;
 	text-align: center;
