@@ -286,7 +286,7 @@ header a:hover:before, .menu a:hover:before {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	width: 95vw;
+	width: 100vw;
 	padding: 10px;
 	background-color: #fdedc1;
 	min-height: 90vh;
@@ -315,7 +315,7 @@ header a:hover:before, .menu a:hover:before {
 }
 
 .poems_list, .poem {
-	width: 50vw;
+	width: 45vw;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
