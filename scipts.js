@@ -13,7 +13,7 @@ function sel_sect_1() {
 
 function sel_sect_2() {
 
-	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat2num1()">Ранкова молитва</span><br><span onclick="show_cat2num2()">Сад</span><br><span onclick="show_cat2num4()">Зазирало небо у калюжі</span><br><span onclick="show_cat2num5()">Крізь сльози дощу посміхається заспане небо</span><br><span onclick="show_cat2num6()">Шумлять ліси</span><br><span onclick="show_cat2num7()">Зів’яли зламані айстри</span><br><span onclick="show_cat2num8()">Ромашкове</span><br><span onclick="show_caat2num9()">Пісня «Осіння»</span><br><span onclick="show_cat2num10()">Простір піснею жайвора зшитий</span>');
+	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat2num1()">Ранкова молитва</span><br><span onclick="show_cat2num2()">Сад</span><br><span onclick="show_cat2num4()">Зазирало небо у калюжі</span><br><span onclick="show_cat2num5()">Крізь сльози дощу посміхається заспане небо</span><br><span onclick="show_cat2num6()">Шумлять ліси</span><br><span onclick="show_cat2num7()">Зів’яли зламані айстри</span><br><span onclick="show_cat2num8()">Ромашкове</span><br><span onclick="show_cat2num9()">Пісня «Осіння»</span><br><span onclick="show_cat2num10()">Простір піснею жайвора зшитий</span>');
 
 }
 
