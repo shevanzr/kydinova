@@ -286,7 +286,7 @@ header a:hover:before, .menu a:hover:before {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	width: 100vw;
+	width: 95vw;
 	padding: 10px;
 	background-color: #fdedc1;
 	min-height: 90vh;
