@@ -19,7 +19,7 @@ function sel_sect_2() {
 
 function sel_sect_3() {
 
-	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat3num1()">Бурштин сходу</span><br><span onclick="show_cat3num2()">У степів моїх рани глибокі</span><br><span onclick="show_cat3num3()">Ветеранам</span><br><span onclick="show_cat3num4()">cat3-num4</span>');
+	$('.poems_list').html('<span onclick="to_start()">Назад</span><br><span onclick="show_cat3num1()">Бурштин сходу</span><br><span onclick="show_cat3num2()">У степів моїх рани глибокі</span><br><span onclick="show_cat3num3()">Ветеранам</span><br><span onclick="show_cat3num4()">Літо в степу</span>');
 
 }
 
@@ -193,7 +193,7 @@ function show_cat3num3() {
 
 function show_cat3num4() {
 
-	$('.poem').html('Ви обрали вірш! 12');
+	$('.poem').html('<span class="title-poem">Літо в степу</span><br>');
 	if( $('.poem').css('margin-top') == '50px' ) {
 		$('body').scrollTo('.poem', 500);
 	}
