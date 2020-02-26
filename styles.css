@@ -437,6 +437,20 @@ span.prose {
 	display: inline-block;
 }
 
+.books {
+	width: 90vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.prose_img {
+	width: 40vw;
+}
+
 @media screen and (max-width: 1661px) {
 
 	.gallery img {
@@ -469,7 +483,7 @@ span.prose {
 		flex-direction: column;
 	}
 	.poems_list, .poem {
-		width: 100vw;
+		width: 90vw;
 	}
 	.poem {
 		margin-top: 50px;
