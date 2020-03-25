@@ -451,6 +451,13 @@ span.prose {
 	width: 40vw;
 }
 
+.competition {
+	margin: 0 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
 @media screen and (max-width: 1661px) {
 
 	.gallery img {
@@ -520,6 +527,11 @@ span.prose {
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
+	}
+	.competition {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
