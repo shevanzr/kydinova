@@ -366,7 +366,8 @@ header a:hover:before, .menu a:hover:before {
 }
 
 .gallery img {
-	width: 16.66%;
+	width: 16.66vw;
+	height: 12.495vw;
 	padding: 0;
 	margin: 0;
 }
@@ -461,7 +462,8 @@ span.prose {
 @media screen and (max-width: 1661px) {
 
 	.gallery img {
-		width: 33.33%;
+		width: 33.33vw;
+		height: 24.995vw;
 	}
 
 }
@@ -496,7 +498,8 @@ span.prose {
 		margin-top: 50px;
 	}
 	.gallery img {
-		width: 50%;
+		width: 50vw;
+		height: 37.5vw;
 	}
 }
 
@@ -515,7 +518,8 @@ span.prose {
 		min-height: 100vh;
 	}
 	.gallery img {
-		width: 100%;
+		width: 100vw;
+		height: 75vw;
 	}
 	.prose_img {
 		width: 100%;
